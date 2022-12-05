@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="roundview" parent="">
+        <item name="cornerFamily"> rounded</item>
+        <item name="cornerRadius"> 20dp</item>
+        <item name="color">@color/white</item>
+
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/shape</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomDialog">
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+</resources>

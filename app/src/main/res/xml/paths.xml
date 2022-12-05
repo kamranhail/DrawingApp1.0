@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths >
+
+
+    <external-cache-path
+        name="external path"
+        path="Android/data/com.example.drawingapp10/files"/>
+    <files-path
+        name="files"
+        path="Android/data/com.example.drawingapp10/files"/>
+    <cache-path
+        name="cache"
+        path="Android/data/com.example.drawingapp10/files"/>
+    <files-path
+        name="files"
+        path="Android/data/com.example.drawingapp10/files"/>
+    <external-path
+        name="captured"
+        path="Android/data/com.example.drawingapp10/files" />
+</paths>

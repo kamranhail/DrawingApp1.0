@@ -1,0 +1,2 @@
+share is not working 
+ dont know why i made  three functiuons  at button and call them form save image function thank you 

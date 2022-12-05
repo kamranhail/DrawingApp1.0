@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<FrameLayout
+    android:id="@+id/fl_drawing_view_container"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/lnearv"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    tools:background="@drawable/background_drawing_view_layout"
+    android:padding="1dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/iv_imgondrawing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/hizaifapic"
+        />
+
+    <com.example.drawingapp10.DrawingView
+        android:id="@+id/Drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+
+        android:background="#80FFFFFF"
+
+        android:elevation="10dp"
+
+
+        >
+
+
+    </com.example.drawingapp10.DrawingView>
+
+</FrameLayout>
+    <LinearLayout
+        android:id="@+id/lnearv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="4dp"
+android:gravity="center_horizontal"
+        android:layout_marginBottom="665dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_drawing_view_container"
+        >
+
+
+        <ImageButton
+            android:id="@+id/id_btn_chosebrushsize"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+
+            android:background="@drawable/paintbrush"/>
+        <ImageButton
+            android:id="@+id/id_btn_chosecolor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+
+            android:background="@drawable/art"/>
+        <ImageButton
+            android:id="@+id/id_btn_undobutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+
+            android:background="@drawable/undo"/>
+        <ImageButton
+            android:id="@+id/id_btn_eraser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:onClick="PaintColorClocked"
+            android:tag="white"
+            android:background="@drawable/eraser"
+
+            />
+        <ImageButton
+            android:id="@+id/ib_gallry"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:onClick="PaintColorClocked"
+            android:tag="gallry"
+            android:background="@drawable/gallry"
+
+            />
+
+        <ImageButton
+
+            android:id="@+id/ib_save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/save"
+           />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
